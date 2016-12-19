@@ -85,7 +85,7 @@ img {
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrapper {
-	width: 1825px;
+    width: 1825px;
     max-width: 100%;
 	margin: 0 auto;
 }
@@ -141,9 +141,9 @@ h1 {
           /*-------------------------INTRO-SECTION-----------------------*/
 
 .intro-section {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
-    background: #151b28  no-repeat ;
+    background: #151b28;
     background-size: cover;
 }
 .slider-wrap {
@@ -210,6 +210,7 @@ a.book-table-btn {
     margin: 0 auto;
     padding: 140px 0 90px;
     background: url("../img/gratia-bg.png") 50% 50% no-repeat;
+    background-size: contain;
     text-align: center;
 }
 .flex-list {
@@ -359,15 +360,17 @@ a.details-btn:hover {
 }
 .reaching-list li {
     width: 32%;
+    max-height: 300px;
     position: relative;
-    padding: 125px 20px;
+    padding: 150px 20px;
     margin-bottom: 30px;
 }
 .reaching-list li:first-child {
     background: #f8f8f8 url("../img/four-number.png") 50% 50% no-repeat;
 }
 .reaching-list li:nth-child(2n) {
-    padding: 150px 20px;
+    max-height: 375px;
+    padding: 188px 20px;
     background: #f8f8f8 url("../img/big-number.png") 50% 50% no-repeat;
     background-size: contain;
 }
@@ -410,16 +413,17 @@ a.details-btn:hover {
     justify-content: center;
 }
 .display-none {
-    /*display: none;*/
+    display: none;
 }
 .reaching-list li:hover .display-none{
     display: block;
 }
 .reaching-list li:hover .content-block {
-     background: rgba(21, 27, 40, 0.8);
+     background: rgba(21, 27, 40, 0.9);
 }
 .content-block p {
     color: #fff;
+    -webkit-align-self: center;
     align-self: center;
 }
                 /*------------------END-REACHING-SECTION---------------------*/
@@ -626,14 +630,17 @@ h4 {
         -webkit-flex-flow: row wrap;
         flex-flow: row wrap;
     }
+
     .text-block {
         padding: 115px 0 70px 0;
     }
+
     .flex-align {
         -webkit-justify-content: space-around;
         justify-content: space-around;
 
     }
+}
 @media(min-width: 1200px) and (max-width: 1849px) {
     .wrapper {
         width: 1170px;
@@ -659,32 +666,39 @@ h4 {
         width: 970px;
     }
 }
+@media (max-width: 1072px) {
+    .hover-wrap h3 {
+        font-size: 38px;
+    }
+}
 @media (min-width: 768px) and (max-width: 991px) {
     .wrapper {
         width: 750px;
-    }
-    .hover-wrap h3 {
-        font-size: 24px;
-    }
-    .hover-wrap p {
-        font-size: 20px;
-    }
-    .center-hover-wrap {
-        padding-bottom: 0;
     }
     a.book-table-btn {
         padding: 0 20px;
     }
 }
 @media (max-width: 991px) {
+    .flex-list {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    .flex-list li {
+        width: 80%;
+    }
+    .dishes-list li img {
+      height: 430px;
+       width: 100%;
+      overflow: hidden;
+    }
     .details-block {
         max-width: 80%;
+        width: auto;
     }
-    .reaching-list h3 {
-        font-size: 24px;
-    }
-    .reaching-list p {
-        font-size: 20px;
+    .center-hover-wrap {
+        -webkit-justify-content: center;
+        justify-content: center;
     }
     .menu-item {
         height: 50%;
@@ -700,8 +714,6 @@ h4 {
         height: 50%;
         width: auto;
     }
-}
-
 }
 @media (max-width: 767px) {
     .wrapper {
@@ -723,15 +735,11 @@ h4 {
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
     }
+    .flex-list li {
+        width: 90%;
+    }
     .hover-wrap h3 {
         font-size: 34px;
-    }
-    .flex-list {
-        -webkit-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    }
-    .flex-list li {
-        width: 80%;
     }
     .details-block {
         text-align: center;
@@ -751,7 +759,6 @@ h4 {
     .menu-list h3 {
         font-size: 38px;
     }
-
 }
 @media (max-width: 651px) {
     .menu-item {
@@ -759,6 +766,9 @@ h4 {
     }
 }
 @media (max-width: 440px) {
+    h2 {
+        font-size: 27px;
+    }
     .big-slider {
         width: 90%;
         left: 5%;
@@ -768,7 +778,7 @@ h4 {
     }
 
     .menu-item h3 {
-        font-size: 38px;
+        font-size: 34px;
     }
 
     .flex-align h4 {
@@ -781,6 +791,12 @@ h4 {
 
     a.book-table-btn {
         right: -11%;
+    }
+    a.details-btn {
+        font-size: 12px;
+    }
+    .dishes-list li img {
+        height: 320px;
     }
 }
 
