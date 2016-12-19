@@ -78,12 +78,6 @@ img {
     text-transform: uppercase;
     color: #d89b64;
 }
-.intro-section {
-    height: 100vh;
-    position: relative;
-    background: #151b28  no-repeat ;
-    background-size: cover;
-}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -139,6 +133,17 @@ h1 {
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------MAIN-PAGE---------------------------------------------*/
+
+          /*-------------------------INTRO-SECTION-----------------------*/
+
+.intro-section {
+    height: 100vh;
+    position: relative;
+    background: #151b28  no-repeat ;
+    background-size: cover;
+}
 .slider-wrap {
     height: 70%;
     width: 70%;
@@ -151,12 +156,10 @@ h1 {
     display: -webkit-flex;
     display: flex;
 }
-
 .big-slider {
     max-width: 615px;
     margin: auto;
 }
-
 .slogan-part {
     display: block;
     position: absolute;
@@ -195,18 +198,18 @@ a.book-table-btn {
     border: 1px solid transparent;
     background: #d89b64;
     color: #000;
-} 
-
-.gratia-bg {
-    padding: 140px 0 90px;
-    background: url("../img/gratia-bg.png") 50% 50% no-repeat;
 }
+                /*--------------END-INTRO-SECTION--------------------------*/
+
+                /*--------------ASSORTMENT-SECTION--------------------------*/
+
 .header-wrap {
     max-width: 555px;
     margin: 0 auto;
+    padding: 140px 0 90px;
+    background: url("../img/gratia-bg.png") 50% 50% no-repeat;
     text-align: center;
 }
-
 .flex-list {
     margin-top: 80px;
     display: -webkit-box;
@@ -220,7 +223,6 @@ a.book-table-btn {
     justify-content: space-between;
     -webkit-align-items: center;
     align-items: center;
-
 }
 .dishes-list li {
     width: 33%;
@@ -288,6 +290,9 @@ a.book-table-btn {
 .check-btn:hover {
     border-bottom: 1px solid #bf8b5c;
 }
+            /*---------------END-ASSORTMENT-SECTION----------------------*/
+
+            /*---------------DETAILS-SECTION------------------------------*/
 .detail-section {
     background: url("../img/details-bg.png") no-repeat;
     background-size: cover;
@@ -336,9 +341,12 @@ a.details-btn:hover {
     border: 1px solid transparent;
     color: #000;
 }
+                /*---------------END-DETAILS-SECTION-------------------*/
+
+                /*------------------REACHING-SECTION-------------------*/
+
 .reaching-section {
     padding-bottom: 115px;
-
 }
 .reaching-list {
     display: -webkit-box;
@@ -356,7 +364,6 @@ a.details-btn:hover {
 .reaching-list li:first-child {
     background: #f8f8f8 url("../img/four-number.png") 50% 50% no-repeat;
 }
-
 .reaching-list li:nth-child(2n) {
     padding: 150px 20px;
     background: #f8f8f8 url("../img/big-number.png") 50% 50% no-repeat;
@@ -378,7 +385,6 @@ a.details-btn:hover {
     display: -webkit-flex;
     display: flex;
 }
-
 .content-block {
     width: 100%;
     height: auto;
@@ -400,7 +406,6 @@ a.details-btn:hover {
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
-
 }
 .display-none {
     /*display: none;*/
@@ -415,6 +420,9 @@ a.details-btn:hover {
     color: #fff;
     align-self: center;
 }
+                /*------------------END-REACHING-SECTION---------------------*/
+
+                /*--------------------FOOTER---------------------------------*/
 
 .main-footer {
     position: relative;
@@ -492,9 +500,12 @@ address {
     height: 26px;
     background: url("../img/sprite.png") 0 -26px no-repeat;
 }
+                /*-----------------END-FOOTER-------------------------*/
 
 
-/*...................MENU-PAGE........................*/
+/*-------------------------------------------MENU-PAGE------------------------------------------------*/
+
+
 .menu-header {
     border-bottom: 1px solid #e6e6e6;
 }
@@ -518,7 +529,6 @@ a.black-link {
     justify-content: space-between;
     -webkit-align-content: space-between;
     align-content: space-between;
-
 }
 .menu-list li {
     width: 30%;
@@ -543,7 +553,7 @@ a.black-link {
 .menu-list p {
     margin-bottom: 30px;
 }
-/*.......................MEAL SECTION...........................*/
+/*------------------------------------MEAL-PAGE----------------------------------------------------*/
 .menu-item {
     max-width: 1300px;
     margin: 170px auto;
