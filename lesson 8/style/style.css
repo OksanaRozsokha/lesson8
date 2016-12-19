@@ -148,6 +148,7 @@ h1 {
 }
 .slider-wrap {
     max-width: 915px;
+    max-height: 520px;
     margin: 0 auto;
     background: url("../img/sligan-bg.png") 50% 50% no-repeat;
     background-size: contain;
@@ -724,17 +725,28 @@ h4 {
         padding-top: 20px;
     }
     .navigation-list {
+        padding: 10px;
+        background: rgba(121, 95, 73, 0.5);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
         -webkit-flex-direction: column;
         flex-direction: column;
+        -webkit-align-items: center;
+        align-items: center;
+
+
+
+    }
+    .navigation-list li {
+        margin: 0 0 5px 0;
+
     }
     a.book-table-btn {
-        bottom: 46%;
-        right: 0;
+        bottom: 72%;
+        right: 40%;
         padding: 0 10px;
         font-size: 14px;
         line-height: 30px;
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
     }
     .flex-list li {
         width: 90%;
@@ -770,10 +782,6 @@ h4 {
     h2 {
         font-size: 27px;
     }
-    .big-slider {
-        /*width: 90%;*/
-        left: 5%;
-    }
     .flex-list li {
         width: 80%;
     }
@@ -791,7 +799,8 @@ h4 {
     }
 
     a.book-table-btn {
-        right: -11%;
+        right: 30%;
+        bottom: 65%;
     }
     a.details-btn {
         font-size: 12px;
