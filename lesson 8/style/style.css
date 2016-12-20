@@ -118,8 +118,8 @@ img {
 }
 .navigation-list li {
     margin-left: 50px;
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 a.navigation-link {
     font: 16px "Montserrat-Bold", sans-serif;
@@ -171,7 +171,7 @@ h1 {
     transform: translateX(-50%);
     text-align: center;
     font: 24px "CrimsonText-Italic", serif;
-    color: #fff;
+    color: #59656a;
 }
 .arrow-down {
     display: block;
@@ -190,11 +190,11 @@ a.book-table-btn {
     bottom: 10%;
     right: 5%;
     padding: 0 50px;
-    border: 1px solid #263045;
+    border: 1px solid #383f53;
     text-decoration: none;
     color: #d89b64;
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 .book-table-btn:hover {
     border: 1px solid transparent;
@@ -231,8 +231,8 @@ a.book-table-btn {
     width: 33%;
     position: relative;
     margin-bottom: 30px;
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 .dishes-list li:nth-child(2n) {
     margin: 0 60px 30px 60px;
@@ -273,7 +273,7 @@ a.book-table-btn {
 .divider {
      max-width: 50px;
     display: inline;
-    margin: 0 auto;
+    margin: 0 auto 15px;
     text-indent: -9999px;
     border-top: 1px solid #d89b64;
     padding-left: 50px;
@@ -287,8 +287,8 @@ a.book-table-btn {
     background: rgba(255, 255, 255, 0);
     border: none;
     border-bottom: 1px solid transparent;
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 .check-btn:hover {
     border-bottom: 1px solid #bf8b5c;
@@ -336,8 +336,8 @@ a.details-btn {
     border: 1px solid #dcdddf;
     color: #d89b64;
     text-decoration: none;
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 a.details-btn:hover {
     background: #d89b64;
