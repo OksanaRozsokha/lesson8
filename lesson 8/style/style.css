@@ -144,7 +144,7 @@ h1 {
      min-height: 100vh;
      position: relative;
      background: rgba(21, 25, 39, 0.9);
-     background-size: cover;
+     background-size: cover;     
  }
 .slider-wrap {
     width: 100%;
@@ -637,7 +637,7 @@ h4 {
 /*..................RESPONSIVE.................*/
 
 @media (max-width: 1849px) {
-    .intro-section {
+    .intro-section {        
         padding-bottom: 5%;
     }
     .flex-align {
@@ -654,6 +654,21 @@ h4 {
 @media(min-width: 1200px) and (max-width: 1849px) {
     .wrapper {
         width: 1170px;
+    }
+}
+@media (min-width: 1350px) {
+    .intro-section {
+        padding-bottom: 0;
+    }
+
+    .slider-wrap {
+        height: 680px;
+        background-size: 63% 100%;
+        margin: 0 auto;
+    }
+
+    .big-slider {
+        max-width: 600px;
     }
 }
 @media (max-width: 1299px) {
