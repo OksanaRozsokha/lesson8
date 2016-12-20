@@ -521,11 +521,9 @@ a.black-link {
     color: #000;
 }
 .menu-section {
-    padding: 170px 0 175px;
-    background: url("../img/gratia-bg.png") 50% 8% no-repeat;
+    padding-bottom: 175px;
 }
 .menu-list {
-    margin-top: 170px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -541,6 +539,7 @@ a.black-link {
 .menu-list li {
     width: 30%;
     margin-bottom: 5%;
+    padding-bottom: 50px;
     text-align: center;
     box-shadow: 0 0 183px #e5e6eb;
 }
@@ -551,15 +550,14 @@ a.black-link {
     border-top: 1px solid #e7e8e9;
     padding-left: 50px;
 }
-.menu-list li {
-    /*max-width: 565px;*/
-    padding-bottom: 50px;
-}
 .menu-list a  {
     text-decoration: none;
 }
 .menu-list p {
     margin-bottom: 30px;
+}
+.menu-list h3 {
+    margin-top: 75px;
 }
 /*------------------------------------MEAL-PAGE----------------------------------------------------*/
 .menu-item {
@@ -632,15 +630,18 @@ h4 {
         -webkit-flex-flow: row wrap;
         flex-flow: row wrap;
     }
-
     .text-block {
         padding: 115px 0 70px 0;
     }
-
     .flex-align {
         -webkit-justify-content: space-around;
         justify-content: space-around;
-
+    }
+    .menu-list h3 {
+        font-size: 38px;
+    }
+    .menu-list p {
+        font-size: 16px;
     }
 }
 @media(min-width: 1200px) and (max-width: 1849px) {
@@ -655,12 +656,6 @@ h4 {
 @media (max-width: 1079px) {
     .main-header {
         padding-top: 40px;
-    }
-}
-@media (max-width: 1199px) {
-    .menu-list {
-        -webkit-justify-content: center;
-        justify-content: center;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -702,6 +697,10 @@ h4 {
         -webkit-justify-content: center;
         justify-content: center;
     }
+    .menu-list li {
+        width: 48%;
+        margin-bottom: 4%;
+    }
     .menu-item {
         height: 50%;
         width: auto;
@@ -725,7 +724,8 @@ h4 {
         padding-top: 20px;
     }
     .navigation-list {
-        padding: 10px;
+        padding: 5px;
+        margin-bottom: 5px;
         background: rgba(121, 95, 73, 0.5);
         border-radius: 5px;
         -webkit-border-radius: 5px;
@@ -733,9 +733,6 @@ h4 {
         flex-direction: column;
         -webkit-align-items: center;
         align-items: center;
-
-
-
     }
     .navigation-list li {
         margin: 0 0 5px 0;
@@ -769,9 +766,13 @@ h4 {
         font-size: 14px;
         line-height: 20px;
     }
-    .menu-list h3 {
-        font-size: 38px;
+    .menu-list li {
+        width: 100%;
+        margin-bottom: 4%;
     }
+    /*.menu-list h3 {*/
+        /*font-size: 38px;*/
+    /*}*/
 }
 @media (max-width: 651px) {
     .menu-item {
