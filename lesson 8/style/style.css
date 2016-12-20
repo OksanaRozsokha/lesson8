@@ -517,8 +517,11 @@ address {
 .menu-header {
     border-bottom: 1px solid #e6e6e6;
 }
-a.black-link {
+.menu-header  a.navigation-link {
     color: #000;
+}
+.menu-header .navigation-list li:nth-child(2) a {
+    color: #d89b64;
 }
 .menu-section {
     padding-bottom: 175px;
@@ -545,7 +548,8 @@ a.black-link {
 }
 .divider-grey {
     max-width: 50px;
-    margin: 30px auto 30px;
+    display: inline-block;
+    margin: 0 auto 25px;
     text-indent: -9999px;
     border-top: 1px solid #e7e8e9;
     padding-left: 50px;
@@ -736,7 +740,9 @@ h4 {
     }
     .navigation-list li {
         margin: 0 0 5px 0;
-
+    }
+    .menu-header .navigation-list {
+        background: rgba(225, 200, 179, 0.5);
     }
     a.book-table-btn {
         bottom: 72%;
